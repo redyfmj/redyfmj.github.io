@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=1">
+<meta name="renderer" content="webkit">
+<meta name="google" value="notranslate">
+<meta name="robots" content="index,follow">
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="点点滴滴">
+<meta name="twitter:description" content="凡是无法必将强大">
+<meta name="twitter:image:src" content="/images/avatar.png">
+
+<meta property="og:url" content="">
+<meta property="og:title" content="点点滴滴">
+<meta property="og:description" content="凡是无法必将强大">
+<meta property="og:site_name" content="点点滴滴">
+<meta property="og:image" content="/images/avatar.png">
+<meta property="og:type" content="website">
+<meta name="robots" content="noodp">
+
+<meta itemprop="name" content="点点滴滴">
+<meta itemprop="description" content="凡是无法必将强大">
+<meta itemprop="image" content="/images/avatar.png">
+
+<link rel="canonical" href="">
+
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-itouch-icon" href="/favicon.png">
+<link rel="stylesheet" href="/bundle/index.css">
+<script type="text/javascript">
+    var timeSinceLang = {
+        year: '年前',
+        month: '个月前',
+        day: '天前',
+        hour: '小时前',
+        minute: '分钟前',
+        second: '秒前'
+    };
+    var root = '';
+</script>
+
+<script type="text/javascript">
+    var conn, reloadTimer, connectTimer;
+    var connect = function() {
+        conn = new WebSocket('ws://' + location.host + '/live');
+        conn.onmessage = function(event) {
+            if (event.data === 'change') {
+                if (reloadTimer) clearTimeout(reloadTimer);
+                reloadTimer = setTimeout(function() {
+                    window.location.reload();
+                }, 200);
+            }
+        };
+        conn.onclose = function() {
+            if (connectTimer) clearTimeout(connectTimer);
+            connectTimer = setTimeout(function() {
+                connect();
+            }, 1000);
+        };
+    };
+    connect();
+</script>
+
+
+        <meta name="keywords" content=",">
+        <meta name="description" content="为什么要在github上面折腾一个静态网站">
+        <meta name="author" content="小墨">
+        <title>为什么要在github上面折腾一个静态网站</title>
+    </head>
+    <body>
+        <article class="container">
+            <header class="header-wrap">
+  <a class="index" href="/">
+    <img class="logo" src="/images/avatar.png" />
+    点点滴滴
+  </a>
+  <ul class="menu">
+      <li class="menu-item"><a href="/archive.html">归档</a></li>
+      <li class="menu-item"><a href="/tag.html">标签</a></li>
+      
+  </ul>
+</header>
+
+            <article class="main article">
+                <h1 class="title">为什么要在github上面折腾一个静态网站</h1>
+                <section class="info">
+                    <span class="avatar" style="background-image: url(/images/avatar.png);"></span>
+                    <a class="name" href="/about.me.html">小墨</a>
+                    
+                    <span class="date" data-time="1545753600"><span class="from"></span></span>
+                    
+                    <span class="tags"><a class="tag" href="/tag//index.html"></a></span>
+                </section>
+                <article class="content"><h2>github</h2>
+
+<ul>
+<li>有限定制：可以修改一些小细节</li>
+<li>用户多</li>
+<li>风险小：这条和上一条有关联（不过账号被黑也完蛋）</li>
+</ul>
+
+<h2>本人</h2>
+
+<p>写得少：不是日更
+维护成本低：节省维护时间，节省服务器费用</p>
+</article>
+                <section class="author">
+                    <div class="avatar" style="background-image: url(/images/avatar.png);"></div>
+                    <a class="name" href="/about.me.html">小墨</a>
+                    <div class="intro">海纳百川</div>
+                </section>
+                <section class="recommend">
+                    
+                    
+                </section>
+                
+    <section id="disqus_thread"></section>
+    <script type="text/javascript">
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//username.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+
+
+            </article>
+        </article>
+        <footer class="footer">
+    <span class="copyright">
+        点点滴滴 ©
+        <script type="text/javascript">
+            document.write(new Date().getFullYear());
+        </script>
+    </span>
+    <span class="publish">Powered by <a href="http://www.chole.io/" target="_blank">Ink</a></span>
+</footer>
+
+        <script src="/bundle/index.js"></script>
+    </body>
+</html>

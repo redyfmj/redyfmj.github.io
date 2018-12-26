@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom">
+  <title>纸小墨官方博客</title>
+  <id>http://www.chole.io/blog</id>
+  <updated>2018-12-16T14:16:47+08:00</updated>
+  <subtitle>构建只为纯粹书写的博客</subtitle>
+  <link href="http://www.chole.io/blog"></link>
+  <author>
+    <name>纸小墨官方博客</name>
+  </author>
+  <entry>
+    <title>如何对信息做出判断</title>
+    <updated>2018-12-16T18:00:00+08:00</updated>
+    <id>tag:www.chole.io,2018-12-16:/blog/如何对信息做出判断.html</id>
+    <content type="html"></content>
+    <link href="http://www.chole.io/blog/如何对信息做出判断.html"></link>
+    <author>
+      <name>纸小墨</name>
+    </author>
+  </entry>
+</feed>
